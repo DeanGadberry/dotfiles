@@ -50,3 +50,9 @@ git rm -r somestupidstuff # delete from repository
 git branch -m master main # rename branch "master" to "main" (change branch)
 git push -u origin main # push everything upstream to main
 git checkout development # change to the development branch 
+git branch mobileScalingIssue16 # create new branch
+git checkout mobileScalingIssue16 # Switch to new branch
+
+### Installing Software ###
+sudo tar -xvzf discord-0.0.21.tar.gz -C /opt
+sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
