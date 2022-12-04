@@ -47,3 +47,6 @@ ln -t ~/.config/i3 -s ~/usr/i3/config
 ### Git ###
 git clone git@github.com:DeanGadberry/.com.git ~/dev/deangadberry.com
 git rm -r somestupidstuff # delete from repository
+git branch -m master main # rename branch "master" to "main" (change branch)
+git push -u origin main # push everything upstream to main
+git checkout development # change to the development branch 
