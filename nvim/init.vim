@@ -10,6 +10,9 @@ set termguicolors
 colorscheme gruvbox
 set bg=dark
 
+nnoremap <space> <Nop>
+let mapleader=" "
+
 "do not automatically insert comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -33,4 +36,7 @@ set autoread
 set wildmenu
 set ruler
 
-map <C-d> :! zathura --fork %:t:r.pdf <CR><CR>
+"map <C-d> :! zathura --fork %:t:r.pdf <CR><CR>
+
+nnoremap <leader>j zo
+nnoremap <leader>k zc

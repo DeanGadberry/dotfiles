@@ -53,7 +53,23 @@ git push -u origin main # push everything upstream to main
 git checkout development # change to the development branch 
 git branch mobileScalingIssue16 # create new branch
 git checkout mobileScalingIssue16 # Switch to new branch
+    alias gitacp="git add * && git commit -m 'update' && git push"
+git checkout HEAD <filename> # recover deleted file
 
 ### Installing Software ###
 sudo tar -xvzf discord-0.0.21.tar.gz -C /opt
 sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
+
+### disk usage ###
+df -h # '-h' makes it human readable
+
+### Aliases ###
+alias gitacp="git add * && git commit -m 'update' && git push"
+
+### Bash Operators / Separators ###
+|   # pipes cmd1 stdout -> cmd2 stdin
+|&  # pipes cmd1 stdout & stderr -> cmd2 stdin (bash 4+)
+&&  # cmd2 executes after cmd1 SUCCESS
+||  # cmd2 executes after cmd1 FAILS
+;   # cmd2 executes ALWAYS (unless 'set -e' invoked)
+
