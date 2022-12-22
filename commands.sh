@@ -41,7 +41,7 @@ sha256sum file.iso
 sha256sum -c sum.sha256
 
 ### (Sym)Links ###
-ln -s ~/usr/file symlink
+ln -s ~/etc/bash_aliases .bash_aliases
 ln -t ~/.config/i3 -s ~/usr/i3/config
 
 ### Git ###
@@ -51,9 +51,9 @@ git rm -r somestupidstuff # delete from repository
 git branch -m master main # rename branch "master" to "main" (change branch)
 git push -u origin main # push everything upstream to main
 git checkout development # change to the development branch 
+    # must commit changes before checking out (or stash)
 git branch mobileScalingIssue16 # create new branch
 git checkout mobileScalingIssue16 # Switch to new branch
-    alias gitacp="git add * && git commit -m 'update' && git push"
 git checkout HEAD <filename> # recover deleted file
 
 ### Installing Software ###
