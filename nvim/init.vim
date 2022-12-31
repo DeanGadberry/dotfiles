@@ -37,9 +37,12 @@ set wildmenu
 set ruler
 
 "
-map <C-d> :! zathura --fork %:t:r.pdf <CR><CR>
+"map <C-d> :! zathura --fork %:t:r.pdf <CR><CR>
 
 nnoremap <leader>j zo
 nnoremap <leader>k zc
 
+" VimTeX settings
 let maplocalleader = ','
+let g:vimtex_view_method = 'zathura'
+
