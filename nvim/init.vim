@@ -36,7 +36,10 @@ set autoread
 set wildmenu
 set ruler
 
-"map <C-d> :! zathura --fork %:t:r.pdf <CR><CR>
+"
+map <C-d> :! zathura --fork %:t:r.pdf <CR><CR>
 
 nnoremap <leader>j zo
 nnoremap <leader>k zc
+
+let maplocalleader = ','
