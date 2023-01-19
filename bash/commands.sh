@@ -10,6 +10,9 @@ xmodmap -e 'keycode 167 = End'
 xmodmap -e 'keycode 110 = XF86Back'
 xmodmap -e 'keycode 115 = XF86Forward'
 
+### Find Keycodes ###
+xev
+
 ### PDF Extraction ###
 pdftk [sample.pdf] cat [page_numbers] output [output_file.pdf]
 pdftk mypdf.pdf cat 1-3 output myshorterpdf.pdf

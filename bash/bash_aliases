@@ -4,5 +4,5 @@ alias gita="git add *"
 alias gitac="git add * && git commit -m update"
 alias gitacp="git add * && git commit -m update && git push"
 alias gitp="git push"
-alias scrot='scrot ~/tmp/scrot/%b%d::%H%M%S.png'
 alias lsa='ls -a'
+alias printsc='scrot -F ~/tmp/scrot/%b%d::%H%M%S.png'
