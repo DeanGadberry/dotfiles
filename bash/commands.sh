@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# ~/etc/commands.sh
-# symlinked to ~/.commands
+# ~/etc/bash/commands.sh
+# ~/.commands
 # Dean's list of frequently used bash commands
 
 ### REMAP ###

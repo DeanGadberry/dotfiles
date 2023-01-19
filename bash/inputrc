@@ -1,4 +1,5 @@
 # ~/etc/bash/inputrc
+# ln .inputrc
 
 set editing-mode vi
 set show-mode-in-prompt
