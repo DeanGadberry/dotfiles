@@ -2,7 +2,16 @@
 
 # ~/etc/bash/commands.sh
 # ~/.commands
-# Dean's list of frequently used bash commands
+# Dean's list of frequently used commands
+
+### Power Management ###        
+reboot
+poweroff
+
+### i3 Management ###
+i3-msg exit
+i3-msg suspend
+i3-msg hibernate
 
 ### REMAP ###
 xmodmap -e 'keycode 166 = Home'
@@ -80,4 +89,5 @@ alias gitacp="git add * && git commit -m 'update' && git push"
 ### Raspberry Pi ###
 sudo rpi-imager 	# the program for burning OS to sd card.
 
-
+### Networking ###
+nmcli 

@@ -52,7 +52,6 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty
-
 # start zathura
 bindsym $mod+Shift+z exec zathura
 # start firefox
