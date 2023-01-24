@@ -29,11 +29,14 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use PrintSc button to take screenshot with scrot
 bindsym Print exec --no-startup-id ~/bin/printscreen.sh
 
+# Use Shell script to disable tap to click on trackpoint with shift+space
+bindsym Shift+space exec --no-startup-id ~/bin/disableTrackPad.sh
+
 # start a terminal
 bindsym $mod+Return exec kitty
 # start zathura
 bindsym $mod+Shift+z exec zathura
-# start firefox
+# start firefox 
 bindsym $mod+Shift+f exec firefox
 
 # change focus
@@ -215,4 +218,6 @@ bar {
         status_command i3status -c ~/.config/i3/i3status.conf
 }
 
+exec --no-startup-id nm-applet
 exec --no-startup-id xsetroot -solid "#282828"
+exec --no-startup-id blueman-applet
