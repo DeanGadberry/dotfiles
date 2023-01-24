@@ -1,4 +1,7 @@
 #!/bin/bash
+# https://old.reddit.com/r/i3wm/comments/513sck/disable_touchpad_while_typing/
+# https://old.reddit.com/r/archlinux/comments/51mdz6/disabling_taptoclick_while_typing/d7i82il/
+
 tp=`xinput list --name-only | grep "TM3471-020"`
 # mouse=`xinput list --name-only | grep "Mouse"`
 
