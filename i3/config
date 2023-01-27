@@ -29,8 +29,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use PrintSc button to take screenshot with scrot
 bindsym Print exec --no-startup-id ~/bin/printscreen.sh
 
+# Use xbacklight to change brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+
+
 # Use Shell script to disable tap to click on trackpoint with shift+space
-bindsym Shift+space exec --no-startup-id ~/bin/disableTrackPad.sh
+bindsym $mod+Shift+space exec --no-startup-id ~/bin/disableTrackPad.sh
 
 # start a terminal
 bindsym $mod+Return exec kitty
@@ -170,7 +175,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+f fullscreen toggle
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle

@@ -68,6 +68,7 @@ git checkout development # change to the development branch
 git branch mobileScalingIssue16 # create new branch
 git checkout mobileScalingIssue16 # Switch to new branch
 git checkout HEAD <filename> # recover deleted file
+git remote set-url origin git@github.com:<Username>/<Project>.git
 
 ### Installing Software ###
 sudo tar -xvzf discord-0.0.21.tar.gz -C /opt
