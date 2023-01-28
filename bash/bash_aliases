@@ -2,7 +2,7 @@
 # ln .bash_aliases
 alias gita="git add *"
 alias gitac="git add * && git commit -m update"
-alias gitacp="git add * && git commit -m update && git push"
+alias gitacp="git add * && git add -u && git commit -m update && git push"
 alias gitp="git push"
 alias lsa='ls -a'
 alias lsl='ls -l'
