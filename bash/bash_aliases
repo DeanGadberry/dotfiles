@@ -1,5 +1,7 @@
 # ~/etc/bash/bash_aliases
 # ln .bash_aliases
+alias vim="vi"
+alias vi="nvim"
 alias gita="git add *"
 alias gitac="git add * && git commit -m update"
 alias gitacp="git add * && git add -u && git commit -m update && git push"
@@ -7,4 +9,4 @@ alias gitp="git push"
 alias lsa='ls -a'
 alias lsl='ls -l'
 alias lsla='ls -la'
-alias printsc='scrot -F ~/tmp/scrot/%b%d::%H%M%S.png'
+alias printsc='scrot -F ~/img/scrot/%b%d::%H%M%S.png'

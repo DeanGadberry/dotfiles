@@ -33,12 +33,13 @@ bindsym Print exec --no-startup-id ~/bin/printscreen.sh
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 
-
-# Use Shell script to disable tap to click on trackpoint with shift+space
+# Use Shell script to disable tap to click on trackpad with shift+space
 bindsym $mod+Shift+space exec --no-startup-id ~/bin/disableTrackPad.sh
+# once on startup to disable the trackpad
+exec --no-startup-id ~/bin/disableTrackPad.sh
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec kitty -o font_size=12
 # start zathura
 bindsym $mod+Shift+z exec zathura
 # start firefox 
