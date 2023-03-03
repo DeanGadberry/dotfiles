@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
 	use('mbbill/undotree')
     use('sheerun/vim-polyglot')
     use('lervag/vimtex')
+    use('norcalli/nvim-colorizer.lua')
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

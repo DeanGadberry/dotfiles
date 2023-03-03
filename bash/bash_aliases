@@ -4,10 +4,10 @@ alias vim="vi"
 alias vi="nvim"
 
 alias gita="git add *"
-alias gitc="bash ~/etc/shellScripts/gitCommit.sh"
+alias gitc="bash ~/etc/bash/shellScripts/gitCommit.sh"
 alias gitp="git push"
 alias gitac="git add * && git add -u && gitc"
-alias gitacp="git add * && git add -u && gitc && git push"
+alias gitacp="git add * && git add -u && gitc \"update\" && git push"
 
 alias lsa='ls -a'
 alias lsl='ls -l'

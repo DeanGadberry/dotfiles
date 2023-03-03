@@ -92,3 +92,7 @@ sudo rpi-imager 	# the program for burning OS to sd card.
 
 ### Networking ###
 nmcli 
+
+### Zip / Unzip Files ###
+zip -r output.zip input
+uzip output.zip

@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/home/dean/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/dean/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/dean/.local/share/nvim/site/pack/packer/start/nvim-treesitter",

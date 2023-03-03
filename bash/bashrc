@@ -121,10 +121,3 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-
-export PATH="$PATH:/home/dean/.local/bin"
-PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH 
-
-# Enable Vim keybindings
-# https://dev.to/brandonwallace/how-to-use-vim-mode-on-the-command-line-in-bash-fnn
-# set -o vi
