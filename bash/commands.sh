@@ -26,6 +26,9 @@ xev
 pdftk [sample.pdf] cat [page_numbers] output [output_file.pdf]
 pdftk mypdf.pdf cat 1-3 output myshorterpdf.pdf
 
+### PDF Combine ###
+pdftk in1.pdf in2.pdf cat output out1.pdf
+
 ### Environment Variables ###
 echo $EDITOR
 export EDITOR="/usr/bin/nvim"
@@ -82,7 +85,7 @@ alias gitacp="git add * && git commit -m 'update' && git push"
 
 ### Bash Operators / Separators ###
 |   # pipes cmd1 stdout -> cmd2 stdin
-|&  # pipes cmd1 stdout & stderr -> cmd2 stdin (bash 4+)
+|&  # pipes cmd1 stdout & stderr -> cmd2 stdin (bash 4+)o
 &&  # cmd2 executes after cmd1 SUCCESS
 ||  # cmd2 executes after cmd1 FAILS
 ;   # cmd2 executes ALWAYS (unless 'set -e' invoked)
@@ -96,3 +99,9 @@ nmcli
 ### Zip / Unzip Files ###
 zip -r output.zip input
 uzip output.zip
+
+### Convert Mp4 to GIF ###
+ffmpeg -i input.mp4 output.gif
+
+### On Screen Key Display ###
+screenkey
