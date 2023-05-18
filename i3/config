@@ -44,6 +44,8 @@ bindsym $mod+Return exec kitty -o font_size=12
 bindsym $mod+Shift+z exec zathura
 # start firefox 
 bindsym $mod+Shift+f exec firefox
+# start steam 
+bindsym $mod+Shift+s exec steam
 
 # change focus
 bindsym $mod+h focus left

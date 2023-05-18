@@ -73,7 +73,7 @@ git checkout mobileScalingIssue16 # Switch to new branch
 git checkout HEAD <filename> # recover deleted file
 git remote set-url origin git@github.com:<Username>/<Project>.git
 
-### Installing Software ###
+### Installing Software / Extract tar.gz ###
 sudo tar -xvzf discord-0.0.21.tar.gz -C /opt
 sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
 
@@ -105,3 +105,6 @@ ffmpeg -i input.mp4 output.gif
 
 ### On Screen Key Display ###
 screenkey
+
+### Uninstall with apt-get ###
+sudo apt-get purge npm
