@@ -37,9 +37,8 @@ export EDITOR="/usr/bin/nvim"
 source ~/.bashrc
 
 ### Mounting ###
-mount /dev/sdb1 /mnt
-# unmount
-umount /mnt
+sudo mount /dev/sdb1 /mnt
+sudo umount /mnt
 # when unmounting, must have no processes running
 # see active processes with 
 sudo lsof /mnt
@@ -108,3 +107,11 @@ screenkey
 
 ### Uninstall with apt-get ###
 sudo apt-get purge npm
+
+### Jekyll Basically ### https://jekyllrb.com/docs/
+mkdir myblog
+jekyll new myblog
+cd myblog
+bundle exec jekyll serve --livereload
+
+### Partition ###
