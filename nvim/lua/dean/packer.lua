@@ -1,3 +1,8 @@
+--
+--
+-- use :PackerSync to update plugins
+-- 
+--
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -44,6 +49,7 @@ return require('packer').startup(function(use)
     use('sheerun/vim-polyglot')
     use('lervag/vimtex')
     use('norcalli/nvim-colorizer.lua')
+    use('ixru/nvim-markdown')
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

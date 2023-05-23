@@ -90,6 +90,11 @@ _G.packer_plugins = {
     path = "/home/dean/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
+  ["nvim-markdown"] = {
+    loaded = true,
+    path = "/home/dean/.local/share/nvim/site/pack/packer/start/nvim-markdown",
+    url = "https://github.com/ixru/nvim-markdown"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/dean/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
