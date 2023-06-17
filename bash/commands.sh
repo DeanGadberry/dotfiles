@@ -56,6 +56,10 @@ sha256sum file.iso
 sha256sum -c sum.sha256
 
 ### (Sym)Links ###
+    # navigate to the directory where you want the link
+    # run the command below
+ln -s target_directory link_name
+
 ln -s ~/etc/bash_aliases .bash_aliases  # -s symbolic
 ln -t ~/.config/i3 -s ~/usr/i3/config   # -t target directory
 
@@ -76,8 +80,8 @@ git remote set-url origin git@github.com:<Username>/<Project>.git
 sudo tar -xvzf discord-0.0.21.tar.gz -C /opt
 sudo ln -sf /opt/Discord/Discord /usr/bin/Discord
 
-### disk usage ###
-df -h # '-h' makes it human readable
+### Install .deb files ###
+sudo apt install ./theupdatedsoftware.deb
 
 ### Aliases ###
 alias gitacp="git add * && git commit -m 'update' && git push"
@@ -114,4 +118,25 @@ jekyll new myblog
 cd myblog
 bundle exec jekyll serve --livereload
 
-### Partition ###
+### Partition and Format a USB ###
+lsblk   # identify disk to partition
+gdisk /dev/sdX  # launch gdisk 
+> d     # wipe partitions one by one 
+            #you can skip this if you want to delete all of the partitions
+> o     # deletes all partitions and creates a new protective MBR
+> n     # creates a new partition 
+            # leave the default for the partition number and first sector
+            # last sector denotes the full size 
+                # leave default to use entire space
+> p     # print the partition table
+> w     # write the changes
+
+### Format Filesystem ###
+sudo mkfs -t vfat /dev/sdX  # formats fat32
+
+### Disk Usage ###
+df -h # '-h' makes it human readable
+
+### Identify Filesystem ###
+df -T   # '-T' prints the file system type of mounted filesystems
+lsblk -f    # same for all devices
