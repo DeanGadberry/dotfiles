@@ -43,6 +43,10 @@ sudo umount /mnt
 # see active processes with 
 sudo lsof /mnt
 
+### Mounting and Unmount without SUDO ###
+udisksctl mount -b /dev/sda1    ## -b allows use of device block name (/dev/sda1)
+udisksctl unmount -b /dev/sda1
+
 ### Permissions ###
 ls -l     # view permissions of files in a directory (-l = long)
 chmod 777 file.cpp    
@@ -101,7 +105,7 @@ nmcli
 
 ### Zip / Unzip Files ###
 zip -r output.zip input
-uzip output.zip
+unzip output.zip
 
 ### Convert Mp4 to GIF ###
 ffmpeg -i input.mp4 output.gif
