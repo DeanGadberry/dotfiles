@@ -36,16 +36,16 @@ export EDITOR="/usr/bin/nvim"
 ### Reload BASH ### 
 source ~/.bashrc
 
+### Mounting and Unmount without SUDO ###
+udisksctl mount -b /dev/sda1    ## -b allows use of device block name (/dev/sda1)
+udisksctl unmount -b /dev/sda1
+
 ### Mounting ###
 sudo mount /dev/sdb1 /mnt
 sudo umount /mnt
 # when unmounting, must have no processes running
 # see active processes with 
 sudo lsof /mnt
-
-### Mounting and Unmount without SUDO ###
-udisksctl mount -b /dev/sda1    ## -b allows use of device block name (/dev/sda1)
-udisksctl unmount -b /dev/sda1
 
 ### Permissions ###
 ls -l     # view permissions of files in a directory (-l = long)
@@ -144,3 +144,9 @@ df -h # '-h' makes it human readable
 ### Identify Filesystem ###
 df -T   # '-T' prints the file system type of mounted filesystems
 lsblk -f    # same for all devices
+
+### Labeling fat32 devices ###
+sudo mlabel -i /dev/sdX ::<label_name>
+
+### Downloading music fron Youtube with youtube-dl ###
+youtube-dl -f bestaudio -x --audio-format mp3 <URL>
