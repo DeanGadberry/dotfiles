@@ -1,7 +1,5 @@
 # ~/etc/bash/bash_aliases
 # ln .bash_aliases
-alias vim="vi"
-alias vi="nvim"
 
 alias gita="git add *"
 alias gitc="bash ~/etc/bash/shellScripts/gitCommit.sh"

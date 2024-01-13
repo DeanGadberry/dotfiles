@@ -42,7 +42,7 @@ return require('packer').startup(function(use)
           vim.cmd("let g:gruvbox_contrast_dark = 'medium'")
 	  end
   })
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')

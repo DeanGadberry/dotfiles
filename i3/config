@@ -32,6 +32,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use PrintSc button to take screenshot with scrot
 bindsym Print exec --no-startup-id ~/bin/printScreen.sh
 
+# Use STAR button (fn+fn12) to take photo with webcam
+bindsym XF86Favorites exec --no-startup-id ~/bin/webcamCapture.sh
+
 # Use xbacklight to change brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10

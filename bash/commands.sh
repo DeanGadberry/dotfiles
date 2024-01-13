@@ -150,3 +150,13 @@ sudo mlabel -i /dev/sdX ::<label_name>
 
 ### Downloading music fron Youtube with youtube-dl ###
 youtube-dl -f bestaudio -x --audio-format mp3 <URL>
+
+### Listen to music on this computer? ###
+cmus
+
+### Rip Extract Download Copy files from a CD DVD ###
+k3b
+
+### Edit Metadata on Audio Files ###
+id3v2 -l file.mp3
+man id3v2
