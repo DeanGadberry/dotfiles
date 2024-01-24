@@ -28,13 +28,6 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
-  use({
 	  'gruvbox-community/gruvbox',
 	  as = 'gruvbox',
 	  config = function()
@@ -50,6 +43,7 @@ return require('packer').startup(function(use)
     use('lervag/vimtex')
     use('norcalli/nvim-colorizer.lua')
     use('ixru/nvim-markdown')
+    use('SirVer/ultisnips')
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
